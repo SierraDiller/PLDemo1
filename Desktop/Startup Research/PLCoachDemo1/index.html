@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Powerlifting Pros - Unleash Your Maximum Strength</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Impact:wght@700&family=Arial:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar" role="navigation">
+    <div class="nav-container">
+      <div class="nav-logo" aria-label="Home">
+        <span class="logo-icon"><i class="fas fa-dumbbell" aria-hidden="true"></i></span>
+        <span class="logo-text">P</span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link">HOME</a></li>
+        <li><a href="#programs" class="nav-link">PROGRAMS</a></li>
+        <li><a href="#services" class="nav-link">SERVICES</a></li>
+        <li><a href="#about" class="nav-link">ABOUT</a></li>
+        <li><a href="#contact" class="nav-link">CONTACT</a></li>
+      </ul>
+      <div class="nav-icons">
+        <button class="icon-btn cart-icon" aria-label="Shopping Cart">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-badge">0</span>
+        </button>
+        <button class="icon-btn user-icon" aria-label="User Account">
+          <i class="fas fa-user"></i>
+        </button>
+        <button class="hamburger" aria-label="Open Menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero" tabindex="-1">
+    <div class="hero-background" aria-hidden="true">
+      <img src="images/hero-powerlifter.jpg" alt="Powerlifter performing a heavy lift" />
+    </div>
+    <div class="hero-content">
+      <h1 class="hero-title">UNLEASH YOUR MAXIMUM STRENGTH</h1>
+      <p class="hero-subtitle">Transform your powerlifting potential with proven coaching methods</p>
+      <a href="#programs" class="cta-button">START YOUR JOURNEY</a>
+    </div>
+    <div class="hero-pagination" aria-label="Hero slides">
+      <button class="pagination-dot active" aria-label="Slide 1">1</button>
+      <button class="pagination-dot" aria-label="Slide 2">2</button>
+      <button class="pagination-dot" aria-label="Slide 3">3</button>
+    </div>
+  </section>
+
+  <!-- Programs Section -->
+  <section id="programs" class="programs">
+    <div class="container">
+      <h2 class="section-title">OUR PROGRAMS</h2>
+      <p class="section-subtitle">Specialized training programs designed to maximize your squat, bench, and deadlift</p>
+      <div class="programs-grid">
+        <div class="program-card">
+          <div class="program-image">
+            <img src="images/program-beginner.jpg" alt="Beginner learning proper form">
+          </div>
+          <div class="program-content">
+            <h3>Beginner Powerlifting</h3>
+            <div class="program-tags"><span>COACHING</span><span>STRENGTH</span></div>
+          </div>
+        </div>
+        <div class="program-card">
+          <div class="program-image">
+            <img src="images/program-competition.jpg" alt="Powerlifter preparing for competition">
+          </div>
+          <div class="program-content">
+            <h3>Competition Prep</h3>
+            <div class="program-tags"><span>COACHING</span><span>STRENGTH</span></div>
+          </div>
+        </div>
+        <div class="program-card">
+          <div class="program-image">
+            <img src="images/program-advanced.jpg" alt="Advanced lifter performing complex movement">
+          </div>
+          <div class="program-content">
+            <h3>Advanced Technique</h3>
+            <div class="program-tags"><span>COACHING</span><span>STRENGTH</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial Section -->
+  <section class="testimonial">
+    <div class="testimonial-container">
+      <div class="testimonial-image">
+        <img src="images/testimonial-lifters.jpg" alt="Two happy, diverse powerlifters">
+      </div>
+      <div class="testimonial-content">
+        <div class="quote-marks">&#8220;</div>
+        <blockquote>
+          This coaching transformed my total from 1200 to 1500 in just 8 months. The technique improvements were incredible.
+        </blockquote>
+        <div class="testimonial-author">
+          <span class="author-title">POWERLIFTER</span>
+          <span class="author-name">Sarah Johnson</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About/Story Section -->
+  <section id="about" class="about">
+    <div class="about-container">
+      <div class="about-left">
+        <span class="about-bg-text">STRONGER</span>
+        <span class="about-story">OUR STORY</span>
+        <span class="about-approach">APPROACH</span>
+      </div>
+      <div class="about-right">
+        <h2 class="about-bg-title">PROVEN METHODS</h2>
+        <h3 class="about-title">OUR APPROACH</h3>
+        <div class="about-items">
+          <div class="about-item">
+            <h4>Competition Success</h4>
+            <p>Our competition-focused methodology has produced champions at every level, from local meets to national championships.</p>
+          </div>
+          <div class="about-item">
+            <h4>Our Mission</h4>
+            <p>We're dedicated to empowering lifters of all experience levels to reach their maximum potential through proven training methods.</p>
+          </div>
+          <div class="about-item">
+            <h4>Technical Excellence</h4>
+            <p>We focus on perfecting the big three lifts with meticulous attention to form, technique, and progressive overload.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics Section -->
+  <section class="statistics">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-number" data-target="12">0</div>
+          <div class="stat-label">Years of Experience</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number" data-target="45">0</div>
+          <div class="stat-label">Certified Coaches</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number" data-target="2800000">0</div>
+          <div class="stat-label">Pounds Lifted (by clients)</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-number" data-target="847">0</div>
+          <div class="stat-label">Successful Lifters</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2 class="section-title">OUR SERVICES</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-image">
+            <img src="images/service-competition.jpg" alt="Powerlifter tying lifting shoes">
+          </div>
+          <div class="service-content">
+            <h3>Competition Prep</h3>
+            <p>Comprehensive meet preparation including programming, technique refinement, and mental preparation for competition day.</p>
+            <button class="read-more">READ MORE</button>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-image">
+            <img src="images/service-technique.jpg" alt="Coach analyzing lifter form">
+          </div>
+          <div class="service-content">
+            <h3>Technique Analysis</h3>
+            <p>Detailed video analysis and personalized feedback to perfect your squat, bench press, and deadlift form.</p>
+            <button class="read-more">READ MORE</button>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-image">
+            <img src="images/service-strength.jpg" alt="Gym equipment and barbells">
+          </div>
+          <div class="service-content">
+            <h3>Strength Programming</h3>
+            <p>Customized periodization programs designed to maximize strength gains and peak at the right time.</p>
+            <button class="read-more">READ MORE</button>
+          </div>
+        </div>
+        <div class="service-card">
+          <div class="service-image">
+            <img src="images/service-nutrition.jpg" alt="Athlete with water bottle and nutrition">
+          </div>
+          <div class="service-content">
+            <h3>Nutrition Planning</h3>
+            <p>Performance-focused nutrition strategies to fuel your training and optimize recovery for maximum strength gains.</p>
+            <button class="read-more">READ MORE</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section class="video-section">
+    <div class="video-banner">
+      <h2>VIEW TRAINING VIDEOS</h2>
+    </div>
+    <div class="video-player">
+      <button class="play-button" aria-label="Play Video">
+        <i class="fas fa-play"></i>
+      </button>
+      <video src="images/training-video.mp4" controls poster="images/video-poster.jpg" tabindex="0"></video>
+    </div>
+  </section>
+
+  <!-- Meet the Team -->
+  <section class="team">
+    <div class="container">
+      <h2 class="section-title">MEET THE COACHES</h2>
+      <p class="section-subtitle">Experienced powerlifting coaches dedicated to your success</p>
+      <div class="team-grid">
+        <div class="coach-card">
+          <div class="coach-image">
+            <img src="images/coach-marcus.jpg" alt="Marcus Thompson, Head Coach">
+          </div>
+          <div class="coach-info">
+            <h3>Marcus Thompson</h3>
+            <span class="coach-specialty">HEAD COACH</span>
+            <span class="coach-check"><i class="fas fa-check-circle"></i></span>
+          </div>
+        </div>
+        <div class="coach-card">
+          <div class="coach-image">
+            <img src="images/coach-sarah.jpg" alt="Sarah Davis, Technique Coach">
+          </div>
+          <div class="coach-info">
+            <h3>Sarah Davis</h3>
+            <span class="coach-specialty">TECHNIQUE COACH</span>
+            <span class="coach-check"><i class="fas fa-check-circle"></i></span>
+          </div>
+        </div>
+        <div class="coach-card">
+          <div class="coach-image">
+            <img src="images/coach-mike.jpg" alt="Mike Rodriguez, Competition Coach">
+          </div>
+          <div class="coach-info">
+            <h3>Mike Rodriguez</h3>
+            <span class="coach-specialty">COMPETITION COACH</span>
+            <span class="coach-check"><i class="fas fa-check-circle"></i></span>
+          </div>
+        </div>
+        <div class="coach-card">
+          <div class="coach-image">
+            <img src="images/coach-lisa.jpg" alt="Lisa Chen, Women's Coach">
+          </div>
+          <div class="coach-info">
+            <h3>Lisa Chen</h3>
+            <span class="coach-specialty">WOMEN'S COACH</span>
+            <span class="coach-check"><i class="fas fa-check-circle"></i></span>
+          </div>
+        </div>
+        <div class="coach-card">
+          <div class="coach-image">
+            <img src="images/coach-david.jpg" alt="David Wilson, Strength Coach">
+          </div>
+          <div class="coach-info">
+            <h3>David Wilson</h3>
+            <span class="coach-specialty">STRENGTH COACH</span>
+            <span class="coach-check"><i class="fas fa-check-circle"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Footer -->
+  <footer id="contact" class="footer">
+    <div class="container footer-content">
+      <div class="footer-column">
+        <h3>CONTACT US</h3>
+        <p><i class="fas fa-envelope"></i> coaching@example.com</p>
+        <p><i class="fas fa-phone"></i> +1 555 123 4567</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>OUR LOCATIONS</h3>
+        <div class="location">
+          <h4>Dallas</h4>
+          <p>123 Strength Ave<br>Dallas, TX 75201</p>
+        </div>
+        <div class="location">
+          <h4>Austin</h4>
+          <p>456 Power Street<br>Austin, TX 78701</p>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>TRAINING HOURS</h3>
+        <div class="hours">
+          <p><strong>Monday - Friday:</strong><br>Open 05:00 - 23:00</p>
+          <p><strong>Weekends:</strong><br>Open 07:00 - 20:00</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 POWERLIFTING PROS, ALL RIGHTS RESERVED</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html> 
