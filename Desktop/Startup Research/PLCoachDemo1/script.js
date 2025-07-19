@@ -26,17 +26,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Statistics count-up animation
   const statSection = document.querySelector('.statistics');
-  const statNumbers = document.querySelectorAll('.stat-number');
+  const statNumbers = document.querySelectorAll('.custom-stat-number');
   let statsAnimated = false;
   function animateStats() {
     if (statsAnimated) return;
     statNumbers.forEach(stat => {
       const target = +stat.getAttribute('data-target');
-      let duration = 1800;
-      if (target > 1000000) duration = 2200;
-      if (target < 100) duration = 1000;
+      let duration = 6000; // 6 seconds for all
       let start = 0;
-      const step = Math.ceil(target / (duration / 16));
+      const step = Math.max(1, Math.ceil(target / (duration / 16)));
+      stat.textContent = '0'; // Always start from 0
       function update() {
         start += step;
         if (start >= target) {
@@ -57,12 +56,16 @@ document.addEventListener('DOMContentLoaded', function () {
       rect.bottom > 80
     );
   }
+
+  // Trigger stats animation on mouse hover over the statistics section
+  statSection.addEventListener('mouseenter', function () {
+    animateStats();
+  });
+
+  // Keep scroll for animateCircles only
   window.addEventListener('scroll', function () {
-    if (isInViewport(statSection)) animateStats();
     animateCircles();
   });
-  // Also check on load
-  if (isInViewport(statSection)) animateStats();
 
   // Circle drawing animation for pagination dots and checkmarks
   function animateCircles() {
@@ -129,6 +132,24 @@ document.addEventListener('DOMContentLoaded', function () {
     });
     video.addEventListener('play', function () {
       playButton.style.display = 'none';
+    });
+  }
+
+  // Testimonial flip card interactivity
+  const flipCard = document.querySelector('.testimonial-flip-card');
+  if (flipCard) {
+    flipCard.tabIndex = 0;
+    flipCard.setAttribute('role', 'button');
+    flipCard.setAttribute('aria-pressed', 'false');
+    flipCard.addEventListener('click', function () {
+      flipCard.classList.toggle('flipped');
+      flipCard.setAttribute('aria-pressed', flipCard.classList.contains('flipped'));
+    });
+    flipCard.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        flipCard.click();
+      }
     });
   }
 }); 
